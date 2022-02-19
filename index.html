@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clif: "#ffffff",
+              ford: "#ffc5cb",
+              dust: "#7c321f",
+              peat: "#850027",
+            },
+          },
+          fontFamily: {
+            body: ["Cardo"],
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-body flex flex-col">
+    <div class="wrap w-11/12 md:w-4/5 m-auto">
+      <!-- Nav Begins -->
+      <div class="nav pt-8">
+        <nav class="flex items-center justify-between flex-col md:flex-row">
+          <div class="logo-wrap w-full flex justify-between items-center">
+            <div class="logo flex items-center">
+              <img
+                src="./images/logo.png"
+                alt="Barbe & Cimon Notaires"
+                class="w-5 h-5"
+              />
+              <h1 class="text-l md:text-2xl font-medium ml-2 uppercase">
+                Barbe & Cimon Notaires
+              </h1>
+            </div>
+            <div class="menu md:hidden cursor-pointer inline-block">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <ul class="flex justify-between flex-col w-full mt-3 md:m-0 md:w-2/5 hidden md:block" id="nav-links">
+            <li>
+              <a href="#" class="font-medium uppercase text-sm">A Propos</a>
+            </li>
+            <li>
+              <a href="#" class="font-medium uppercase text-sm">Nos Services</a>
+            </li>
+            <li>
+              <a href="#" class="font-medium uppercase text-sm">Articles</a>
+            </li>
+            <li>
+              <a href="#" class="font-medium uppercase text-sm">Contact</a>
+            </li>
+            <li>
+              <a href="#" class="font-semibold uppercase text-sm">En</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Nav Ends -->
+    </div>
+    <!-- Hero Section Begins -->
+    <div class="hero flex flex-col md:flex-row bg-gradient-to-b from-clif to-ford mt-10 py-16">
+      <div class="hero-content w-11/12 md:w-96 m-auto">
+        <p class="text-red-600 uppercase">Nous Valorisons La</p>
+        <h1 class="text-red-600 text-5xl uppercase mb-2">
+          Clarte
+          <span class="inline-block"
+            ><svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path></svg></span>
+        </h1>
+        <p class="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          natus enim veniam, vero sunt reprehenderit aliquid? Accusantium et
+          distinctio quaerat omnis aliquid eius, doloribus temporibus magnam
+          doloremque deleniti nemo nobis.
+        </p>
+        <button
+          class="rounded-md py-2 px-7 text-xs font-extrabold cursor-pointer mt-5 tracking-wider border-red-600 border hover:bg-red-600 hover:text-white text-red-600"
+        >
+          En savoir plus
+        </button>
+      </div>
+      <div class="img-wrap w-full md:w-1/2 flex justify-end">
+        <img src="./images/pen.png" alt="pen" class="w-3/4" />
+      </div>
+    </div>
+    <!-- Hero Section Ends -->
+    <!-- House Section Begins -->
+    <div class="house h-80">
+      <img src="./images/bg-houses.png" alt="" class="object-cover house" />
+    </div>
+    <!-- House Section Ends -->
+    <!-- Service Section Begins -->
+    <div class="services-wrap h-auto">
+      <div class="services w-11/12 md:w-4/5 m-auto py-16 h-auto">
+        <p class="uppercase text-blue-900">Nos</p>
+        <h1 class="text-4xl uppercase mb-3 text-blue-900">Services</h1>
+        <div class="grid md:grid-cols-3 gap-10">
+          <div
+            class="flex justify-center items-center rounded-md py-2 px-7 h-32 text-s font-bold cursor-pointer mt-5 border-blue-900 border bg-blue-900 text-white hover:bg-white hover:text-blue-900 uppercase"
+          >
+            Copropriete
+            <span class="inline-block"
+              ><svg
+                class="w-4 h-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path></svg></span>
+          </div>
+          <div
+            class="flex justify-center items-center rounded-md py-2 px-7 h-32 text-s font-bold cursor-pointer mt-5 border-dust border bg-dust text-white hover:bg-white hover:text-dust uppercase"
+          >
+            Planification Familiale
+            <span class="inline-block"
+              ><svg
+                class="w-4 h-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path></svg></span>
+          </div>
+          <div
+            class="flex justify-center items-center rounded-md py-2 px-7 h-32 text-s font-bold cursor-pointer mt-5 border-peat border bg-peat text-white hover:bg-white hover:text-peat uppercase"
+          >
+            Immobilier
+            <span class="inline-block"
+              ><svg
+                class="w-4 h-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path></svg></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service Section Ends -->
+    <!-- Articles -->
+    <div class="article-wrap bg-gray-100 h-auto">
+      <div class="article w-11/12 md:w-4/5 m-auto py-28 h-auto">
+        <p class="uppercase text-blue-900">Les</p>
+        <h1 class="text-4xl uppercase mb-3 text-blue-900 mb-8">articles</h1>
+        <div class="art grid md:grid-cols-4 gap-5">
+          <div class="bg-white rounded-md p-4 drop-shadow">
+            <h1 class="font-bold pb-2">Titre de l'article</h1>
+            <p class="text-xs mb-5">
+              18 mars 2021 . <span class="underline">Immobilier</span>
+            </p>
+            <p class="text-xs">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+              porro esse modi cumque quasi...
+            </p>
+          </div>
+          <div class="bg-white rounded-md p-4 drop-shadow">
+            <h1 class="font-bold pb-2">Titre de l'article</h1>
+            <p class="text-xs mb-5">
+              18 mars 2021 . <span class="underline">Immobilier</span>
+            </p>
+            <p class="text-xs">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+              porro esse modi cumque quasi...
+            </p>
+          </div>
+          <div class="bg-white rounded-md p-4 drop-shadow">
+            <h1 class="font-bold pb-2">Titre de l'article</h1>
+            <p class="text-xs mb-5">
+              18 mars 2021 . <span class="underline">Immobilier</span>
+            </p>
+            <p class="text-xs">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+              porro esse modi cumque quasi...
+            </p>
+          </div>
+          <div class="bg-white rounded-md p-4 drop-shadow">
+            <h1 class="font-bold pb-2">Titre de l'article</h1>
+            <p class="text-xs mb-5">
+              18 mars 2021 . <span class="underline">Immobilier</span>
+            </p>
+            <p class="text-xs">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+              porro esse modi cumque quasi...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Articles Section -->
+    <!-- Footer -->
+    <div class="foot-wrap">
+      <div class="footer py-28 w-11/12 md:w-4/5 m-auto grid md:grid-cols-4">
+        <div class="logo flex items-center mb-10 md:m-0 md:col-span-2">
+          <img
+            src="./images/logo.png"
+            alt="Barbe & Cimon Notaires"
+            class="w-5 h-5"
+          />
+          <h1 class="md:text-2xl font-medium ml-2 uppercase">
+            Barbe & Cimon Notaires
+          </h1>
+        </div>
+        <div class="links md:col-span-1 mb-10 md:m-0 ">
+          <p class="mb-3 uppercase text-sm">A propos</p>
+          <p class="mb-3 uppercase text-sm">nos services</p>
+          <p class="mb-3 uppercase text-sm">Articles</p>
+          <p class="uppercase text-sm">contact</p>
+        </div>
+        <div class="address md:col-span-1">
+          <p class="font-bold mb-2 uppercase text-sm">Bureau</p>
+          <p class="mb-2 uppercase text-xs">
+            101 Boulevard Saint Joseph o, Montreal, QC H2t 2p7
+          </p>
+          <p class="font-bold uppercase text-sm">Nous Suivre</p>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
